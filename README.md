@@ -5,6 +5,7 @@
 - **Niri** - Wayland compositor
 - **Ghostty** - Terminal
 - **swww** - Wallpaper
+- **mako** - Notifications
 ## 🚀 Installation
 ```bash
 git clone git@github.com:dimasic92/dotfiles.git ~/dotfiles
@@ -15,3 +16,4 @@ cp -r niri/* ~/.config/niri/
 cp -r ghostty/* ~/.config/niri/
 cp -r monit ~/.config/
 cp -r hypr/* ~/.config/hypr/
+cp -r mako/* ~/.config/mako/

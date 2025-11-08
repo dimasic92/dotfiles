@@ -1,102 +1,46 @@
 [
   {
-    "battery": {
-      "format": "{capacity}",
-      "format-alt": "{time} {icon}",
-      "format-charging": " {capacity}",
-      "format-icons": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "states": {
-        "critical": 1,
-        "warning": 30
-      }
-    },
-    "clock": {
-      "format": "{:%d.%m.%y %H:%M}",
-      "format-alt": "{:%A, %B %d at %R}"
-    },
-    "height": 30,
-    "hyprland/language": {
-      "format-en": "🇺🇸",
-      "format-ru": "🇷🇺",
-      "min-length": 5,
-      "tooltip": false
-    },
-
-    "niri/window": {
-    "format": "{}",
-    "rewrite": {
-      "(.*) - Brave": "$1",
-      "(.*) - Chromium": "$1",
-      "(.*) - Brave Search": "$1",
-      "(.*) - Outlook": "$1",
-      "(.*) Microsoft Teams": "$1"
-    },
-    "separate-outputs": true
-  },
-
-    "hyprland/workspaces": {
-      "all-outputs": false,
-      "disable-scroll": true,
-      "format": "{icon}",
-      "format-icons": {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "5": "5",
-        "6": "6",
-        "7": "7",
-        "8": "8",
-        "9": "9",
-        "magic": ""
-      },
-      "persistent-workspaces": {
-        "*": 5
-      },
-      "show-special": true,
-      "special-visible-only": true
-    },
     "layer": "top",
-    "modules-center": [
-      "hyprland/window",
-      "niri/window"
-    ],
+    "position": "top",
+    "height": 30,
     "modules-left": [
-      "hyprland/workspaces",
-      "wlr-taskbar",
       "niri/workspaces"
     ],
+    "modules-center": [
+      "niri/window"
+    ],
     "modules-right": [
-      "hyprland/language",
       "pulseaudio",
       "battery",
       "clock",
       "tray"
     ],
-    "position": "top",
-    "pulseaudio": {
-      "format": "{volume}",
-      "format-bluetooth": "{icon} {volume}% ",
-      "format-icons": {
-        "car": "",
-        "default": [
-          "",
-          ""
-        ],
-        "handsfree": "",
-        "headphones": "",
-        "headset": "",
-        "phone": "",
-        "portable": ""
+    "niri/window": {
+      "format": "{}",
+      "rewrite": {
+        "(.*) - Brave": "$1",
+        "(.*) - Chromium": "$1",
+        "(.*) - Brave Search": "$1",
+        "(.*) - Outlook": "$1",
+        "(.*) Microsoft Teams": "$1"
       },
-      "format-muted": "",
+      "separate-outputs": true
+    },
+    "pulseaudio": {
+      "format": "{volume}",
+      "format-muted": "silence",
       "on-click": "pavucontrol"
+    },
+    "battery": {
+      "format": "{capacity}",
+      "format-charging": " {capacity}",
+      "states": {
+        "warning": 30,
+        "critical": 1
+      }
+    },
+    "clock": {
+      "format": "{:%d.%m.%y %H:%M}"
     },
     "tray": {
       "icon-size": 14,
@@ -104,4 +48,3 @@
     }
   }
 ]
-

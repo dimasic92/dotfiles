@@ -1,0 +1,2 @@
+# dotfiles
+my niri config

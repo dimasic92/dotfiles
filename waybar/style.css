@@ -1,0 +1,53 @@
+* {
+  border: none;
+  border-radius: 0px;
+  font-family: "Agave Nerd Font";
+  font-weight: bold;
+  font-size: 16px;
+  min-height: 0;
+  color: #b7077e;
+}
+
+window#waybar {
+  background-color: #0e0d15;
+}
+
+/* Workspace Buttons */
+#workspaces button {
+  background-color: transparent;
+  color: #b7077e;
+  border: none;
+  padding: 0 8px;
+}
+
+#workspaces button:hover {
+  color: #f12aae;
+}
+
+#workspaces button.active {
+  color: #f12aae;
+  background-color: transparent;
+}
+
+#workspaces button.urgent {
+  color: #d02063;
+  background-color: transparent;
+}
+
+#clock, #battery, #pulseaudio, #tray, #language, #weather {
+  padding: 0 10px;
+  color: #b7077e;
+}
+
+#pulseaudio.muted {
+  color: #4c3866;
+}
+
+#battery.critical:not(.charging) {
+  color: #d02063;
+}
+
+#window {
+  color: #b7077e;
+  padding: 0 10px;
+}
